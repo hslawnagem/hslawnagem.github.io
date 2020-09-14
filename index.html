@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="main.js" as="script">
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="particles.min.js"></script>
+    <!-- <link rel="script" href="main.js"> -->
+    <title>MEW</title>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="keywords" content="Megan Walsh, Megan Elizabeth Walsh, MEW, 
+        Megan E Walsh, portfolio, javascript, programming, web design">
+    <meta name="author" content="Megan Walsh">
+</head>
+
+<body>
+    <canvas class="background" style="width:100%; height:100%;"></canvas>
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <div class="navbar-menu detached">
+                <ul class="navbar-links">
+                    <li class="navbar-item"><a class="navbar-link" href="#about">ABOUT</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#tech">TECH</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#projects">PROJECTS</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#connect">CONNECT</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <button type="button" class="navbar-toggle" onclick="toggleNavBar()" aria-label="Open navigation menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </nav>
+    </header>
+    <div class="main">
+        <section class="section" id="about">
+            <h2>ABOUT</h2>
+            <div class="about-container">
+                <img id="photo" src="imgs/headshot/headshot-2mb.jpg" width="270" height="300">
+                <div class="about-detail-container">
+                    <div class="about-detail" id="about-professional">
+      
+                        <p>I'm a Software Engineer residing in Brooklyn, NY.
+                            Most days, you can find me exploring new apps, datasets, and libraries,
+                            especially those related to civic tech, cybersecurity, and productivity.
+                            Lately, I'm spending too much time being an AirTable evangelist.
+                        </p>
+                    </div>
+                    <div class="about-detail" id="about-fun">
+                   
+                        <p>When I'm not working, I love to move around. My choice
+                            activities are weightlifting, walking, and following along with
+                            an overly enthusiastic fitness coach (via Zoom, of course).
+                        </p>
+                    </div>
+                    <!--<div class="about-detail" id="about-personal">
+                        <img>
+                        <p>
+                        </p>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+        <section id="tech">
+            <h2>TECH</h2>
+            <div class="tech-container">
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/javascript.svg" alt="Javascript" />
+                        <h4>Javascript<h4>
+                    </a>
+                </div>
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/airtable.svg" alt="Airtable" />
+                        <h4>Airtable<h4>
+                    </a>
+                </div>
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/cplusplus.svg" alt="C++" />
+                        <h4>C++<h4>
+                    </a>
+                </div>
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/css.svg" alt="CSS" />
+                        <h4>CSS<h4>
+                    </a>
+                </div>
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/express.svg" alt="ExpressJS" />
+                        <h4>ExpressJS<h4>
+                    </a>
+                </div>
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/git.svg" alt="Git" />
+                        <h4>Git<h4>
+                    </a>
+                </div>
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/sequelize.svg" alt="SequelizeJS" />
+                        <h4>SequelizeJS<h4>
+                    </a>
+                </div>
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/kali.svg" alt="Kali Linux" />
+                        <h4>Kali<h4>
+                    </a>
+                </div>
+
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/html.svg" alt="HTML" />
+                        <h4>HTML<h4>
+                    </a>
+                </div>
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/wordpress.svg" alt="Wordpress" />
+                        <h4>WordPress<h4>
+                    </a>
+                </div>
+
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/redux.svg" alt="ReduxJS" />
+                        <h4>ReduxJS<h4>
+                    </a>
+                </div>
+
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/nodejs.svg" alt="NodeJS" />
+                        <h4>Node<h4>
+                    </a>
+                </div>
+
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/react.svg" alt="ReactJS" />
+                        <h4>ReactJS<h4>
+                    </a>
+                </div>
+
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/reactnative.svg" alt="ReactNativeJS" />
+                        <h4>ReactNativeJS<h4>
+                    </a>
+                </div>
+
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/postgresql.svg" alt="PostgreSQL" />
+                        <h4>PostgreSQL<h4>
+                    </a>
+                </div>
+
+                <div class="tech-item">
+                    <a href="http://www.google.com">
+                        <img src="imgs/tech/excel.svg" alt="Excel" />
+                        <h4>MS Excel<h4>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!------------------------------------------------------------->
+        <section id="projects">
+            <h2>PROJECTS</h2>
+            <div class="projects-container">
+                <div class="project project-01">
+                    <a href="https://github.com/AdventurerScavengerHunt">
+                        <h4>AdventurAR - Git Hub</h4>
+                    </a>
+                    <p>Location based mobile AR scavager hunt</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/v--kLZ3nNhQ" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------->
+        <section id="connect">
+            <h2>CONNECT</h2>
+            <div class="connect-container">
+                <div class="connect-item">
+                    <a href="linkedin.com/in/mewalsh">
+                        <img src="imgs/connect/linkedin-plain.svg" alt="LinkedIn" width="75" height="75">
+                    </a>
+                </div>
+                <div class="connect-item">
+                    <a href="https://github.com/mwalsh01">
+                        <img src="imgs/connect/github-original.svg" alt="GitHub" width="75" height="75">
+                    </a>
+                </div>
+                <div class="connect-item">
+                    <a href="https://twitter.com/hslawnagem">
+                        <img src="imgs/connect/twitter-original.svg" alt="Twitter" width="75" height="75">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <div class="contact-container">
+                <form id="contact-form" action="https://formspree.io/xoqkogqg" method="POST">
+                    <div class="form-row name">
+                        <label for="name">Name:</label>
+                        <input placeholder="Name" type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-row email">
+                        <label for="email">Email:</label>
+                        <input placeholder="E-mail" type="text" name="email" id="email" required> </div>
+                    <div class="form-row message">
+                        <label for="message">Message:</label>
+                        <textarea placeholder="Message!" rows="4" name="message" id="message"
+                            required></textarea>
+                    </div>
+                    <button class="submit" type="submit">SUBMIT</button>
+                </form>
+            </div>
+    </div>
+    </section>
+    <footer>
+        <span>Megan Walsh 2020</span>
+    </footer>
+    </div>
+
+</body>
+
+</html>
