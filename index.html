@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="style.css">
     <link rel="preload" href="main.js" as="script">
+    <link rel="preload" href="navbar.js" as="script">
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="particles.min.js"></script>
     <!-- <link rel="script" href="main.js"> -->
@@ -22,7 +25,7 @@
     <header id="navbar">
         <nav class="navbar-container container">
             <div class="navbar-menu detached">
-                <ul class="navbar-links">
+                <ul id="detached-navbar-links" class="navbar-links">
                     <li class="navbar-item"><a class="navbar-link" href="#about">ABOUT</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="#tech">TECH</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="#projects">PROJECTS</a></li>
@@ -30,13 +33,14 @@
                     <li class="navbar-item"><a class="navbar-link" href="#contact">CONTACT</a></li>
                 </ul>
             </div>
-            <button type="button" class="navbar-toggle" onclick="toggleNavBar()" aria-label="Open navigation menu">
+            <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
         </nav>
     </header>
+    <script type="text/javascript" src="navbar.js"></script>
     <div class="main">
         <section class="section" id="about">
             <h2>ABOUT</h2>
@@ -44,25 +48,17 @@
                 <img id="photo" src="imgs/headshot/headshot-2mb.jpg" width="270" height="300">
                 <div class="about-detail-container">
                     <div class="about-detail" id="about-professional">
-      
                         <p>I'm a Software Engineer residing in Brooklyn, NY.
                             Most days, you can find me exploring new apps, datasets, and libraries,
                             especially those related to civic tech, cybersecurity, and productivity.
-                            Lately, I'm spending too much time being an AirTable evangelist.
                         </p>
                     </div>
                     <div class="about-detail" id="about-fun">
-                   
                         <p>When I'm not working, I love to move around. My choice
                             activities are weightlifting, walking, and following along with
                             an overly enthusiastic fitness coach (via Zoom, of course).
                         </p>
                     </div>
-                    <!--<div class="about-detail" id="about-personal">
-                        <img>
-                        <p>
-                        </p>
-                    </div>-->
                 </div>
             </div>
         </section>
@@ -184,9 +180,14 @@
                         <h4>AdventurAR - Git Hub</h4>
                     </a>
                     <p>Location based mobile AR scavager hunt</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/v--kLZ3nNhQ" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+        
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/v--kLZ3nNhQ" height="315" width="560"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+               
                 </div>
             </div>
         </section>
@@ -224,8 +225,7 @@
                         <input placeholder="E-mail" type="text" name="email" id="email" required> </div>
                     <div class="form-row message">
                         <label for="message">Message:</label>
-                        <textarea placeholder="Message!" rows="4" name="message" id="message"
-                            required></textarea>
+                        <textarea placeholder="Message!" rows="4" name="message" id="message" required></textarea>
                     </div>
                     <button class="submit" type="submit">SUBMIT</button>
                 </form>
