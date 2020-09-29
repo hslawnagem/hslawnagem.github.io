@@ -9,7 +9,6 @@ html,
 body {
   display: flex;
   flex-direction: column;
-
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -206,7 +205,6 @@ section > h2 {
   text-align: center;
   margin: 2px;
 }
-
 img#photo {
   border-radius: 100%;
   margin: 20px;
@@ -253,12 +251,14 @@ img#photo {
 }
 .project {
   width: 60%;
+
   display: flex;
   justify-content: center;
   text-align: center;
 }
 .video-container {
   position: relative;
+
   padding-bottom: 56.25%;
   padding-top: 30px;
   height: 0;
@@ -329,6 +329,4 @@ footer {
   left: 0;
   right: 0;
   z-index: -1;
-  /* width: 100%;
-  height: 100%; */
 }
