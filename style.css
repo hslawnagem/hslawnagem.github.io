@@ -313,8 +313,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-/*-------canvas-------*/
-
+/*-------Background-canvas-------*/
 .background {
   position: fixed;
   top: 0;
