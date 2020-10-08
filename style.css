@@ -35,7 +35,6 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  background: pink;
   margin-top: 64px;
   align-items: center;
   justify-content: center;
