@@ -33,7 +33,12 @@ body {
 }
 /*-------MAIN DIV-------*/
 .main {
+  display: flex;
+  flex-direction: column;
+  background: pink;
   margin-top: 64px;
+  align-items: center;
+  justify-content: center;
 }
 /*-------NAVIGATION-------*/
 #navbar {
@@ -275,19 +280,23 @@ img.project-image {
   margin: 20px;
 }
 /*-------CONTACT-------*/
+.contact-container {
+  width: auto;
+  max-width: 500px;
+}
 #contact-form {
   display: flex;
   flex-direction: column;
+  justify-items: center;
   padding: 10px;
+  width: 300px;
 }
-
 .form-row {
   display: flex;
   flex-direction: column;
   align-content: center;
   padding: 5px;
 }
-
 .form-row label {
   display: none;
 }
@@ -295,11 +304,11 @@ img.project-image {
   align-self: center;
   flex-grow: 1;
   flex-shrink: 1;
-  width: 300px;
+  width: 100%;
 }
 .form-row textarea {
   align-self: center;
-  width: 300px;
+  width: 100%;
 }
 .submit {
   margin: 10px;
