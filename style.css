@@ -301,8 +301,7 @@ img.project-image {
 }
 .form-row input {
   align-self: center;
-  flex-grow: 1;
-  flex-shrink: 1;
+
   width: 100%;
 }
 .form-row textarea {
