@@ -1,14 +1,13 @@
 :root {
   --navbar-bg-color: hsl(332, 44%, 73%);
   --navbar-text-color: hsl(0, 0%, 100%);
-  --navbar-text-color-focus: hsl(0, 0%, 75%);
+  --navbar-text-color-focus: hsl(0, 1%, 16%);
   --navbar-bg-contrast: hslhsl(332, 44%, 95%);
+  --project-heading-bg: pink;
 }
 
 html,
 body {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -217,10 +216,9 @@ section > h2 {
   max-width: 1000px;
 }
 .tech-item {
-  flex: 1 1 24%;
+  flex: 1 1 33%;
   justify-content: center;
   text-align: center;
-
   margin-top: 10px;
 }
 .tech-item img {
@@ -234,42 +232,46 @@ section > h2 {
   color: gray;
   margin-bottom: 45px;
 }
-.connect-container {
-  display: flex;
-  justify-content: center;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 /*-------PROJECTS-------*/
 .projects-container {
   display: flex;
   justify-content: center;
+  width: auto;
+  height: auto;
+  max-width: 1000px;
 }
 .project {
-  width: 60%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-}
-img.project-image {
-  margin: 20px;
-  max-width: 250px;
-  max-height: 250px;
-  margin: 20px;
-  max-width: 100%;
-  height: auto;
 }
 .project-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+.project-heading {
+  width: inherit;
+}
+.project-image img {
+  max-width: 100%;
+  max-height: 350px;
+  margin: 20px;
+}
+.project-links {
+  display: flex;
+  justify-content: center;
+}
+.project-link {
+  flex: 1;
+}
+.project-link img {
+  width: 75px;
+  height: 75px;
 }
 /*-------CONNECT-------*/
 .connect-container {
@@ -280,33 +282,22 @@ img.project-image {
   margin: 20px;
 }
 /*-------CONTACT-------*/
-.contact-container {
-  width: auto;
-  max-width: 750px;
-}
-#contact-form {
+.contact-container form {
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  padding: 10px;
-  width: 300px;
-}
-.form-row {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  padding: 5px;
+  min-width: 300px;
 }
 .form-row label {
   display: none;
 }
-.form-row input {
-  align-self: center;
-  width: 100%;
+.form-row {
+  display: flex;
+  margin: 5px 0px 5px 0px;
 }
+.form-row input,
 .form-row textarea {
-  align-self: center;
-  width: 100%;
+  align-self: right;
+  flex: 100%;
 }
 .submit {
   width: 75px;
@@ -314,9 +305,12 @@ img.project-image {
   text-align: center;
   align-self: flex-end;
 }
+/*-------FOOTER-------*/
 footer {
+  padding-top: 32px;
   display: flex;
   justify-content: center;
+  color: grey;
 }
 /*-------Background-canvas-------*/
 .background {
