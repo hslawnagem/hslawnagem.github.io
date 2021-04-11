@@ -1,8 +1,8 @@
 :root {
-  --navbar-bg-color: hsl(0, 0%, 15%);
-  --navbar-text-color: hsl(0, 0%, 85%);
-  --navbar-text-color-focus: white;
-  --navbar-bg-contrast: hsl(0, 0%, 25%);
+  --navbar-bg-color: hsl(332, 44%, 73%);
+  --navbar-text-color: hsl(0, 0%, 100%);
+  --navbar-text-color-focus: hsl(0, 0%, 75%);
+  --navbar-bg-contrast: hslhsl(332, 44%, 95%);
 }
 
 html,
@@ -214,6 +214,7 @@ section > h2 {
 .tech-container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1000px;
 }
 .tech-item {
   flex: 1 1 24%;
@@ -281,7 +282,7 @@ img.project-image {
 /*-------CONTACT-------*/
 .contact-container {
   width: auto;
-  max-width: 500px;
+  max-width: 750px;
 }
 #contact-form {
   display: flex;
@@ -301,7 +302,6 @@ img.project-image {
 }
 .form-row input {
   align-self: center;
-
   width: 100%;
 }
 .form-row textarea {
@@ -309,8 +309,6 @@ img.project-image {
   width: 100%;
 }
 .submit {
-  margin: 10px;
-  padding: 10px;
   width: 75px;
   height: 40px;
   text-align: center;
